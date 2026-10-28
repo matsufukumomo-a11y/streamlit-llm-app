@@ -40,5 +40,8 @@ tzdata==2026.5
 urllib3==2.8.0
 watchdog==6.0.0
 python-dotenv
-langchain-openai
-langchain-core
+langchain==0.3.26
+openai==1.91.0
+langchain-community==0.3.26
+langchain-openai==0.3.27
+httpx==0.28.1
