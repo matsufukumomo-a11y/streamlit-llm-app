@@ -50,8 +50,12 @@ if st.button("実行"):
         else:
             st.write("スパルタ塾講師の松本が回答します。")
             st.write("考案中・・・") 
-
-        st.write(llm_execute(selected_item, input_message))
+            
+        try:
+            output = llm_execute(selected_item, input_message)        
+            st.write(output)
+        except Exception as e:
+            st.error(f"エラーが発生しました: {e}")
 
     # 質問が空だったら
     else:
