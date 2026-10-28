@@ -19,7 +19,7 @@ def llm_execute(selected_item, input_message):
             HumanMessage(content=input_message)
         ]
 
-        return llm(messages).content
+        return llm.invoke(messages).content
 
 
 st.title("先生に質問できるアプリ")
